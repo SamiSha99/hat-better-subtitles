@@ -1,7 +1,14 @@
 # Better Subtitles (AHiT Modding)
-Improved subtitles made for A Hat in time modding purposes.
+Improved subtitles made for A Hat in time modding purposes, inspired by Nyakuza Metro DLC subtitles, which uses a simple "OpenHUD" call with complicated nodes used to simulate subtitles, this one instead, simplify the whole process into one node only, with multiple inputs to allow for more unique functionality for custom subtitles.
 
-Simply add these files into the Classes folder, compile scripts and you were be able to use the kismet nodes to run these subtitles.
+![](https://i.imgur.com/6d02D3T.png)
+
+# Installation:
+
+1) Download the script files.
+2) Put them into the Classes folder in your mod.
+3) Go to the mod manager and click "Compile Scripts"
+4) And go to the editor and start using them!
 
 # Documentation:
 
@@ -52,3 +59,7 @@ Child of `SS_SeqAct_SubtitleManager`, plays subtitles in an animated "speak" for
 
 `LyricColorBorder` - Like the above, but the border.
 `Keyframes` - Array, Should equal the amount of words in `Text! Each keyframe should be larger than the other.
+
+## `SS_SeqAct_ShutdownSubtitles`
+
+Instead of calling Stop/Skip on all kismet nodes of the subtitles, this node can be called once and should shutdown all kismet nodes in the process.
