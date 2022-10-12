@@ -58,7 +58,8 @@ Child of `SS_SeqAct_SubtitleManager`, plays subtitles in an animated "speak" for
 `LyricColor` - Switch each word to this color when reached.
 
 `LyricColorBorder` - Like the above, but the border.
-`Keyframes` - Array, Should equal the amount of words in `Text! Each keyframe should be larger than the other.
+
+`Keyframes` - Array, Should equal the amount of words in `Text`! Each keyframe should be larger than the other.
 
 ## `SS_SeqAct_ShutdownSubtitles`
 
