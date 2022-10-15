@@ -47,7 +47,7 @@ function bool Render(HUD H)
     local bool SpokeWord;
 	if(!Super(Hat_HUDElement).Render(H)) return false;
     
-    H.Canvas.Font = (Font != None ? Font : Class'Hat_FontInfo'.static.GetDefaultFont("abcdefghijkmnlopqrstuvwxyzABCDEFGHIJKMNLOPQRSTUVWXYZ"));
+    H.Canvas.Font = (Font != None ? Font : Class'Hat_FontInfo'.static.GetDefaultFont(Text));
 
     x = H.Canvas.ClipX * Position.X;
     y = H.Canvas.ClipY * Position.Y;
