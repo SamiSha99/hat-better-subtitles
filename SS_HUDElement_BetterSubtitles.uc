@@ -25,7 +25,7 @@ function bool Render(HUD H)
     
     H.Canvas.SetDrawColor(TextColor.R, TextColor.G, TextColor.B, TextColor.A * Opacity);
     
-    H.Canvas.Font = (Font != None ? Font : Class'Hat_FontInfo'.static.GetDefaultFont("abcdefghijkmnlopqrstuvwxyzABCDEFGHIJKMNLOPQRSTUVWXYZ"));
+    H.Canvas.Font = (Font != None ? Font : Class'Hat_FontInfo'.static.GetDefaultFont(Text));
 
     x = H.Canvas.ClipX * Position.X;
     y = H.Canvas.ClipY * Position.Y;
